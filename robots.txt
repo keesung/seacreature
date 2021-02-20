@@ -1,2 +1,3 @@
 User-agent: *
-Allow: /
+Allow:/
+Sitemap: https://seacreature.site/sitemap.xml
