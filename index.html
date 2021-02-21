@@ -113,7 +113,8 @@
             >
                 여기를 눌러 😐 얼굴사진 업로드
             </button>
-            <br /><br />
+            <br /><br />       <h3 class="subtitle">업로드 후 5초만 기다려주세요.⏱ </h3>
+            <br />
 
             <div class="image-upload-wrap">
                 <input
@@ -125,8 +126,8 @@
                 <div class="drag-text">
                     <h3 class="upload-text">
                         💻 PC는 사진을 끌어놓아 <br/>
-                        드래그앤드랍도 가능합니다.<br/><br/>
-                        업로드 후 5초만 기다려주세요.
+                        드래그앤드랍도 가능합니다.<br/>
+                        
                     </h3>
                 </div>
             </div>
@@ -141,10 +142,10 @@
                 <div id="label-container"></div>
                 <br />
                 <div class="image-title-wrap">
-                    <button type="button" onclick="removeUpload()" class="remove-image">
-                        다른사진으로 재시도 
+                    <a onClick="window.location.reload()" style="cursor: pointer;"><button type="button" onclick="removeUpload()" class="remove-image">
+                        다른 사진으로 재시도 
                         <!-- <span class="image-title">Uploaded Image</span> -->
-                    </button>
+                        </button></a>
                 </div>
             </div>
         </div>
