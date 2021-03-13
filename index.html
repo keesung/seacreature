@@ -271,28 +271,6 @@
 <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
     
 <!-- 캐시삭제 코드 -->
-    private void clearApplicationCache(java.io.File dir){
-        if(dir==null)
-            dir = getCacheDir();
-        else;
-        if(dir==null)
-            return;
-        else;
-        java.io.File[] children = dir.listFiles();
-        try{
-            for(int i=0;i<children.length;i++)
-                if(children[i].isDirectory())
-                    clearApplicationCache(children[i]);
-                else children[i].delete();
-        }
-        catch(Exception e){}
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        clearApplicationCache(null);
-    }
     <footer>
         <div><br>
             <p class="copyright">
@@ -300,7 +278,8 @@
             </p>
         </div>
     </footer>
-    </body> 
+</body> 
+
 
     <!-- Copyright (c) 2021 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
 
